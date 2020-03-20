@@ -1,0 +1,140 @@
+/* .font-bing { font-family: 'Bing Bam Boum'; }
+@font-face {
+    font-family: 'Bing Bam Boum';
+    src: url('./fonts/bingbamboum.woff2') format('woff2'),
+        url('./fonts/bingbamboum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.font-zoombie { font-family: 'Zoombieland'; }
+@font-face {
+    font-family: 'Zoombieland';
+    src: url('./fonts/zoombieland.woff2') format('woff2'),
+        url('./fonts/zoombieland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-cheri { font-family: 'Cheri'; }
+@font-face {
+    font-family: 'Cheri';
+    src: url('./fonts/Cheri.woff2') format('woff2'),
+        url('./fonts/Cheri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'Cheri';
+    src: url('./fonts/Cheriliney.woff2') format('woff2'),
+        url('./fonts/Cheriliney.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.font-bubblegum { font-family: 'bubblegum'; }
+@font-face {
+    font-family: 'bubblegum';
+    src: url('./fonts/bubblegum.woff2') format('woff2'),
+        url('./fonts/bubblegum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-kbt { font-family: 'kbtwolovers'; }
+@font-face {
+    font-family: 'kbtwolovers';
+    src: url('./fonts/kbtwolovers.woff2') format('woff2'),
+        url('./fonts/kbtwolovers.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* .font-pokemon { font-family: 'Pokemon'; }
+@font-face {
+    font-family: 'Pokemon';
+    src: url('./fonts/pokemonsolidnormal.woff2') format('woff2'),
+        url('./fonts/pokemonsolidnormal.woff') format('woff');
+    font-weight: normal;
+    font-style: solid;
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('./fonts/pokemonhollownormal.woff2') format('woff2'),
+        url('./fonts/pokemonhollownormal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.font-wood { font-family: 'woodcutter VIRUS'; }
+@font-face {
+    font-family: 'woodcutter VIRUS';
+    src: url('./fonts/woodcuttervirus.woff2') format('woff2'),
+        url('./fonts/woodcuttervirus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* .font-jabjai { font-family: 'jabjai'; }
+@font-face {
+    font-family: 'jabjai';
+    src: url('./fonts/jabjailight.woff2') format('woff2'),
+        url('./fonts/jabjailight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'jabjai';
+    src: url('./fonts/jabjaiHeavy.woff2') format('woff2'),
+        url('./fonts/jabjaiHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+} */
+
+/* .font-sketch { font-family: 'Sketch 3D'; }
+@font-face {
+    font-family: 'Sketch 3D';
+    src: url('./fonts/sketch3d.woff2') format('woff2'),
+        url('./fonts/sketch3d.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+html {font-size: 12px;} /*16px*/
+
+body {
+  /* background-color: white;
+  font-family: 'Poppins', sans-serif; */
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333;
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'woodcutter VIRUS';
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
+
