@@ -65,7 +65,8 @@ function randomizeMovie() {
 
   const renderMovie = `
     <div class="movie-random">
-      <h5 class="movie-title">${title}</h5>
+      <h4><a href="${imdb}" class="movie-title font-wood">${title}</a></h4>
+      
       <iframe 
         width="560" 
         height="315" 
@@ -78,47 +79,15 @@ function randomizeMovie() {
         picture-in-picture" 
         allowfullscreen>
       </iframe>
-      <a href="${imdb}" class="movie-imdb">IMDB</a>
+      
     </div>
   `
 
   let movieDiv = document.createElement('div')
   movieDiv.classList.add('movie-card')
+  movieBtn.innerHTML = 'Gimme Another Movie!'
   movieRecommend.innerHTML = renderMovie;
-  // movieRecommend.appendChild(movieDiv)
 }
-
-
-
-
-
-// let randomMovie = movie[Math.floor(Math.random() * movie.length)];
-
-// let title = randomMovie.title
-// let trailer = randomMovie.trailer
-// let imdb = randomMovie.imdb
-
-// const renderMovie = `
-//   <div class="movie-random">
-//     <h5 class="movie-title">${title}</h5>
-//     <iframe 
-//       width="560" 
-//       height="315" 
-//       src="${trailer}" 
-//       frameborder="0" 
-//       allow="accelerometer; 
-//       autoplay; 
-//       encrypted-media; 
-//       gyroscope; 
-//       picture-in-picture" 
-//       allowfullscreen>
-//     </iframe>
-//     <a href="${imdb}" class="movie-imdb">IMDB</a>
-//   </div>
-// `
-
-// let movieDiv = document.createElement('div')
-// movieDiv.classList.add('movie-card')
 
 movieBtn.addEventListener('click', function(){
   randomizeMovie()

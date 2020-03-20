@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700|Nanum+Gothic+Coding:400,700|Roboto&display=swap');
 /* .font-bing { font-family: 'Bing Bam Boum'; }
 @font-face {
     font-family: 'Bing Bam Boum';
@@ -103,15 +104,63 @@
     font-style: normal;
 } */
 
+.font-creepy { font-family: 'THE CREEPY HUNTER'; }
+@font-face {
+    font-family: 'THE CREEPY HUNTER';
+    src: url('./fonts/thecreepyhunter.woff2') format('woff2'),
+        url('./fonts/thecreepyhunter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-html {font-size: 12px;} /*16px*/
+.font-friday { font-family: 'friday13'; }
+@font-face {
+    font-family: 'friday13';
+    src: url('./fonts/friday13bonusnfi.woff2') format('woff2'),
+        url('./fonts/friday13bonusnfi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'friday13';
+    src: url('./fonts/friday13sh.woff2') format('woff2'),
+        url('./fonts/friday13sh.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-stranger { font-family: 'Stranger back in the Night'; }
+@font-face {
+    font-family: 'Stranger back in the Night';
+    src: url('./fonts/strangerbackinthenight.woff2') format('woff2'),
+        url('./fonts/strangerbackinthenight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-hell { font-family: 'Hellvetica'; }
+@font-face {
+    font-family: 'Hellvetica';
+    src: url('./fonts/hellvetica.woff2') format('woff2'),
+        url('./fonts/hellvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+html {font-size: 16px;} /*16px*/
 
 body {
   /* background-color: white;
   font-family: 'Poppins', sans-serif; */
   font-weight: 400;
   line-height: 1.65;
-  color: #333;
+  color: black;
 }
 
 p {margin-bottom: 1.15rem;}
