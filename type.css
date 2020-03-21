@@ -8,7 +8,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Cheri';
     src: url('./fonts/Cheri.woff2') format('woff2'),
@@ -34,7 +33,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'kbtwolovers';
     src: url('./fonts/kbtwolovers.woff2') format('woff2'),
@@ -59,7 +57,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'friday13';
     src: url('./fonts/friday13bonusnfi.woff2') format('woff2'),
@@ -76,7 +73,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Stranger back in the Night';
     src: url('./fonts/strangerbackinthenight.woff2') format('woff2'),
@@ -84,7 +80,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Hellvetica';
