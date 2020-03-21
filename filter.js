@@ -26,7 +26,7 @@ function randomizeMovie() {
   // create random movie div
   const renderMovie = `
     <div class="movie-random">
-      <h4><a href="${imdb}" class="movie-title">${title}</a></h4>
+      <h4 class="movie-title"><a href="${imdb}">${title}</a></h4>
       
       <iframe 
         width="560" 

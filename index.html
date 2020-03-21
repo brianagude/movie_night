@@ -24,22 +24,24 @@
     <section class="wrapper">
       <section class="title-block">
         <h2 class="font-wood">It's Movie Night!</h2>
-        <!-- <h3 class="font-wood">What are you in the mood for?</h3> -->
       </section>
 
       <section class="movie-block">
         <div class="movie-genres"></div>
         <div class="movie-recommendation"></div>
+        <div class="btn-block">
+          <button class="movie-btn btn">
+            giMmE a MOviE!
+          </button>
+          <small>literally click the button <br>for a movie</small>
+        </div>
 
-        <button class="movie-btn btn">
-          Gimme A Movie!
-        </button>
+        
       </section>
       
       <form name="movie_submissions" method="POST" action="/" data-netlify="true">
-        <textarea name="submissions" placeholder = "Movie Submissions! Seperate movie titles with commas pleasseee"></textarea>
-        <button type="submit" class="form-submit btn">Submit!</button>
-        
+        <textarea name="submissions" placeholder = "Seperate movie titles with commas pleasseee" required></textarea>
+        <button type="submit" class="form-submit btn">SUbMiT a mOViE</button>
       </form>
       <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
       
