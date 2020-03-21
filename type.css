@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700|Nanum+Gothic+Coding:400,700|Roboto&display=swap');
-/* .font-bing { font-family: 'Bing Bam Boum'; }
-@font-face {
-    font-family: 'Bing Bam Boum';
-    src: url('./fonts/bingbamboum.woff2') format('woff2'),
-        url('./fonts/bingbamboum.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
 
-.font-zoombie { font-family: 'Zoombieland'; }
 @font-face {
     font-family: 'Zoombieland';
     src: url('./fonts/zoombieland.woff2') format('woff2'),
@@ -17,7 +8,7 @@
     font-style: normal;
 }
 
-.font-cheri { font-family: 'Cheri'; }
+
 @font-face {
     font-family: 'Cheri';
     src: url('./fonts/Cheri.woff2') format('woff2'),
@@ -26,15 +17,15 @@
     font-style: normal;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'Cheri';
     src: url('./fonts/Cheriliney.woff2') format('woff2'),
         url('./fonts/Cheriliney.woff') format('woff');
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
-} */
+}
 
-.font-bubblegum { font-family: 'bubblegum'; }
+
 @font-face {
     font-family: 'bubblegum';
     src: url('./fonts/bubblegum.woff2') format('woff2'),
@@ -43,7 +34,7 @@
     font-style: normal;
 }
 
-.font-kbt { font-family: 'kbtwolovers'; }
+
 @font-face {
     font-family: 'kbtwolovers';
     src: url('./fonts/kbtwolovers.woff2') format('woff2'),
@@ -52,24 +43,6 @@
     font-style: normal;
 }
 
-/* .font-pokemon { font-family: 'Pokemon'; }
-@font-face {
-    font-family: 'Pokemon';
-    src: url('./fonts/pokemonsolidnormal.woff2') format('woff2'),
-        url('./fonts/pokemonsolidnormal.woff') format('woff');
-    font-weight: normal;
-    font-style: solid;
-}
-
-@font-face {
-    font-family: 'Pokemon';
-    src: url('./fonts/pokemonhollownormal.woff2') format('woff2'),
-        url('./fonts/pokemonhollownormal.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-.font-wood { font-family: 'woodcutter VIRUS'; }
 @font-face {
     font-family: 'woodcutter VIRUS';
     src: url('./fonts/woodcuttervirus.woff2') format('woff2'),
@@ -78,33 +51,6 @@
     font-style: normal;
 }
 
-/* .font-jabjai { font-family: 'jabjai'; }
-@font-face {
-    font-family: 'jabjai';
-    src: url('./fonts/jabjailight.woff2') format('woff2'),
-        url('./fonts/jabjailight.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'jabjai';
-    src: url('./fonts/jabjaiHeavy.woff2') format('woff2'),
-        url('./fonts/jabjaiHeavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-} */
-
-/* .font-sketch { font-family: 'Sketch 3D'; }
-@font-face {
-    font-family: 'Sketch 3D';
-    src: url('./fonts/sketch3d.woff2') format('woff2'),
-        url('./fonts/sketch3d.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-.font-creepy { font-family: 'THE CREEPY HUNTER'; }
 @font-face {
     font-family: 'THE CREEPY HUNTER';
     src: url('./fonts/thecreepyhunter.woff2') format('woff2'),
@@ -113,7 +59,7 @@
     font-style: normal;
 }
 
-.font-friday { font-family: 'friday13'; }
+
 @font-face {
     font-family: 'friday13';
     src: url('./fonts/friday13bonusnfi.woff2') format('woff2'),
@@ -130,7 +76,7 @@
     font-style: normal;
 }
 
-.font-stranger { font-family: 'Stranger back in the Night'; }
+
 @font-face {
     font-family: 'Stranger back in the Night';
     src: url('./fonts/strangerbackinthenight.woff2') format('woff2'),
@@ -139,7 +85,7 @@
     font-style: normal;
 }
 
-.font-hell { font-family: 'Hellvetica'; }
+
 @font-face {
     font-family: 'Hellvetica';
     src: url('./fonts/hellvetica.woff2') format('woff2'),
@@ -148,22 +94,31 @@
     font-style: normal;
 }
 
+/* font classes hahaha so lazy */
+.font-bubblegum { font-family: 'bubblegum'; }
+.font-cheri { font-family: 'Cheri'; }
+.font-friday { font-family: 'friday13'; }
+.font-hell { font-family: 'Hellvetica'; }
+.font-ibm { font-family: 'IBM Plex Mono', monospace; }
+.font-kbt { font-family: 'kbtwolovers'; }
+.font-nanum { font-family: 'Nanum Gothic Coding', monospace; }
+.font-roboto { font-family: 'Roboto', sans-serif; }
+.font-stranger { font-family: 'Stranger back in the Night'; }
+.font-creepy { font-family: 'THE CREEPY HUNTER'; }
+.font-wood { font-family: 'woodcutter VIRUS'; }
+.font-zoombie { font-family: 'Zoombieland'; }
 
+/* base type styles */ 
 
-
-
-
-html {font-size: 16px;} /*16px*/
+html { font-size: 16px; } 
 
 body {
-  /* background-color: white;
-  font-family: 'Poppins', sans-serif; */
   font-weight: 400;
   line-height: 1.65;
   color: black;
 }
 
-p {margin-bottom: 1.15rem;}
+p { margin-bottom: 1.15rem; }
 
 h1, h2, h3, h4, h5 {
   margin: 2.75rem 0 1.05rem;
@@ -177,13 +132,10 @@ h1 {
   font-size: 3.052em;
 }
 
-h2 {font-size: 2.441em;}
+h2 { font-size: 2.441em; }
+h3 { font-size: 1.953em; }
+h4 { font-size: 1.563em; }
+h5 { font-size: 1.25em; }
 
-h3 {font-size: 1.953em;}
-
-h4 {font-size: 1.563em;}
-
-h5 {font-size: 1.25em;}
-
-small, .text_small {font-size: 0.8em;}
-
+small, 
+.text_small { font-size: 0.8em; }

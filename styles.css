@@ -1,68 +1,45 @@
-/* base styles */
-
 body { 
   background: black;
+  border: black solid 6px;
+  box-sizing: border-box;
   
   margin: 0;
   padding: 0;
 
-  
-}
-
-.btn, textarea {
-  background: #f5f5f5;
-  border: 3px solid black;
-  font-family: 'Nanum Gothic Coding', monospace;
-  font-weight: 700;
-
-  padding: 8px 16px;
-
-  font-size: 24px;
-}
-
-.btn:hover {
-  cursor: pointer;
-  /* transform: rotateX(50deg); */
-
-}
-
-.wrapper {
-  border: black solid 6px;
-  box-sizing: border-box;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 
   overflow-x: hidden;
   overflow-y: scroll;
-
-  padding: 16px;  
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
 }
 
+.wrapper { padding: 16px; }
 
+.btn:hover { 
+  cursor: pointer; 
+  font-family: 'Hellvetica';
+  font-size: 1.2rem;
+}
+
+.btn, 
+textarea {
+  background: #f5f5f5;
+  border: 3px solid black;
+  outline: none; 
+
+  font-size: 24px;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-weight: 700;
+
+  padding: 8px 16px;
+}
 
 .title-block,
 .movie-block {
-  /* margin: 0; */
   margin: auto;
   width: 100%;
   max-width: 1200px;
-
   text-align: center; 
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
 }
 
 .movie-random {
@@ -70,33 +47,26 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: #f5f5f550; */
-  /* padding: 8px; */
-  
+}
 
-  /* margin-bottom: 48px; */
+.movie-random h4:hover {
+  font-family: 'Hellvetica';
 }
 
 iframe {
   border: 5px solid black;
+  background: black;
 }
 
-.movie-block {
-  margin-bottom: 48px;
-}
-
+.movie-block { margin-bottom: 48px; }
 .movie-btn { margin-top: 16px; }
 
 form {
-  /* position: sticky;
-  bottom: 16px;
-  right: 16px; */
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin: auto;
 
-  margin-top: 48px;
+  margin: 48px auto 0;
 
   display: flex;
   align-items: flex-end;
@@ -106,36 +76,29 @@ form {
 
 .creds { 
   text-align: center; 
-  
+  font-family: 'Nanum Gothic Coding', monospace; 
+  text-transform: capitalize;
 }
 
-textarea,
-.form-submit {
-  width: 100%;
-  /* text-align: right; */
-}
-
-textarea {
-  border-bottom: none;
-  text-align: center; 
-  width: 100%;
-  max-height: 600px;
-  min-height: 120px;
-  /* max-width: 600px; */
-  resize: vertical; 
+.creds a {  font-weight: 800; }
+.creds a:hover {
+  font-family: 'Hellvetica';
   font-size: 1rem;
 }
 
-/* textarea {
-  text-align: center;
-    border: solid 3px black;
-    border-bottom: none;
-} */
+textarea,
+.form-submit { width: 100%; }
 
+.form-submit { margin-top: 4px; }
 
+textarea {
+  font-size: 1rem;
+  text-transform: capitalize;
 
-/* iframe {
-  width: 240px;
-  height: auto;
-} */
+  width: 100%;
+  max-height: 600px;
+  min-height: 120px;
 
+  border-radius: 0px;
+  resize: vertical;
+}
