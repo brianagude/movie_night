@@ -55,3 +55,7 @@ movieBtn.addEventListener('click', function(){
   randomizeMovie()
 })
 
+
+
+
+
