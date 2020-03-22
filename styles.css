@@ -21,8 +21,6 @@ body {
 
 }
 
-
-
 .btn:hover { 
   cursor: pointer; 
   font-family: 'Hellvetica';
@@ -44,6 +42,10 @@ textarea {
 
 .movie-block { margin-bottom: 48px; }
 .movie-btn { margin-top: 32px; }
+.movie-title:hover { 
+  cursor: pointer; 
+  text-transform: lowercase;
+}
 
 .title-block,
 .movie-block {
@@ -69,6 +71,8 @@ iframe {
   border: 5px solid black;
   background: black;
 }
+
+.ytp-show-cards-title { display: none !important; }
 
 form {
   width: 100%;

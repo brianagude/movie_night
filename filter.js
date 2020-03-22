@@ -1,7 +1,7 @@
-// some variables
-let movieBlock = document.querySelector('.movie-block')
-let movieRecommend = document.querySelector('.movie-recommendation')
-let movieBtn = document.querySelector('.movie-btn')
+const movieBlock = document.querySelector('.movie-block')
+const movieRecommend = document.querySelector('.movie-recommendation')
+const movieBtn = document.querySelector('.movie-btn')
+const finePrint = document.querySelector('.movie-block small')
 
 // change youtube url to embed url
 function getId(url) {
@@ -13,25 +13,37 @@ function getId(url) {
     : null;
 }
 
-// get a random movie
-function randomizeMovie() {
+// get a random movie without repeats!
+function randomMovie(moviesList) {
+  let moviesListSlice = moviesList.slice(0);
 
-  // some more variables
-  const randomMovie = movies[Math.floor(Math.random() * movies.length)];
+  return function () {
+    if (moviesListSlice.length < 1) { moviesListSlice = moviesList.slice(0); }
+    let index = Math.floor(Math.random() * moviesListSlice.length);
+    let item = moviesListSlice[index];
+    moviesListSlice.splice(index, 1);
+    return item;
+  };
+}
+
+const randomize = randomMovie(movies);
+
+// add a random movie to the page
+function randomizeMovie() {
+  const randomMovie = randomize()
   const title = randomMovie.title
   const trailer = randomMovie.trailer
-  const imdb = randomMovie.imdb
   const trailerID = getId(trailer);
 
   // create random movie div
   const renderMovie = `
     <div class="movie-random">
-      <h4 class="movie-title"><a href="${imdb}">${title}</a></h4>
+      <h4 class="movie-title">${title}</h4>
       
       <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/${trailerID}?controls=0"
+        width="680" 
+        height="384" 
+        src="https://www.youtube.com/embed/${trailerID}?version=3&loop=1&playlist=${trailerID}"
         frameborder="0" 
         allow="accelerometer; 
         autoplay; 
@@ -45,10 +57,18 @@ function randomizeMovie() {
   `
 
   // create a div, fill it with random movie info, add it to the page
-  let movieDiv = document.createElement('div')
+  const movieDiv = document.createElement('div')
   movieDiv.classList.add('movie-card')
   movieRecommend.innerHTML = renderMovie;
   movieBtn.innerHTML = 'Gimme Another Movie!'
+  finePrint.innerHTML = 'Click the movie title for a <b>sURpriSe</b>!'
+
+  // start a google search when you click the title
+  const titleTag = document.querySelector('.movie-title');
+  
+  titleTag.onclick = function () {
+    window.open('http://google.com/search?q=' + title);
+  };
 }
 
 movieBtn.addEventListener('click', function(){
