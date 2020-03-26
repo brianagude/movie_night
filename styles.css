@@ -11,6 +11,10 @@ body {
 
   overflow-x: hidden;
   overflow-y: scroll;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper { padding: 16px; }

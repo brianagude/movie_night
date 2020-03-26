@@ -14,14 +14,14 @@ function getId(url) {
 }
 
 // get a random movie without repeats!
-function randomMovie(moviesList) {
-  let moviesListSlice = moviesList.slice(0);
+function randomMovie(movieList) {
+  let movieListSlice = movieList.slice(0);
 
   return function () {
-    if (moviesListSlice.length < 1) { moviesListSlice = moviesList.slice(0); }
-    let index = Math.floor(Math.random() * moviesListSlice.length);
-    let item = moviesListSlice[index];
-    moviesListSlice.splice(index, 1);
+    if (movieListSlice.length < 1) { movieListSlice = movieList.slice(0); }
+    let index = Math.floor(Math.random() * movieListSlice.length);
+    let item = movieListSlice[index];
+    movieListSlice.splice(index, 1);
     return item;
   };
 }
