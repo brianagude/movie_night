@@ -13,8 +13,8 @@ body {
   overflow-y: scroll;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper { padding: 16px; }
@@ -42,6 +42,14 @@ textarea {
   font-weight: 700;
 
   padding: 8px 16px;
+}
+
+.movie-counter {
+  position: absolute;
+  top: 16px; 
+  right: 16px;
+
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 .movie-block { margin-bottom: 48px; }
