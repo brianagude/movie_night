@@ -44,6 +44,14 @@ textarea {
   padding: 8px 16px;
 }
 
+.movie-counter {
+  position: absolute;
+  top: 16px; 
+  right: 16px;
+
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
 .movie-block { margin-bottom: 48px; }
 .movie-btn { margin-top: 32px; }
 .movie-title:hover { 
