@@ -3,7 +3,10 @@ const movieCounter = document.querySelector('.movie-counter')
 const numberOfMovies = movies.length
 
 // show the number of movies currently in database
-movieCounter.innerHTML = `<b>${numberOfMovies}</b> movies total`
+movieCounter.innerHTML = `
+  <b>${numberOfMovies}</b> movies total
+  <a href="index.html" class="home-btn btn">back to home </a>
+`
 
 // change youtube url to embed url
 function getId(url) {
