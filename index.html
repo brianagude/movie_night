@@ -22,6 +22,8 @@
   </head>
   <body>
     <div class="movie-counter"></div>
+    <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
+
     <section class="wrapper">
       <section class="title-block">
         <h2 class="font-wood">It's Movie Night!</h2>
@@ -38,11 +40,23 @@
         </div>
       </section>
       
-      <form name="movie_submissions" method="POST" action="/" data-netlify="true">
-        <textarea name="submissions" placeholder = "Separate movie titles with commas pleasseee"></textarea>
-        <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
-      </form>
-      <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
+      <!-- <div class="movie-submissions">
+        <form name="movie_submissions" method="POST" action="/" data-netlify="true">
+          <textarea name="submissions" placeholder = "Separate movie titles with commas pleasseee"></textarea>
+          <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
+        </form>
+      </div> -->
+
+      <!-- Draggable DIV -->
+      <div id="draggable">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="mydivheader">Click here to move</div>
+        <form name="movie_submissions" method="POST" action="/" data-netlify="true">
+          <textarea name="submissions" placeholder="Separate movie titles with commas pleasseee"></textarea>
+          <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
+        </form>
+      </div>
+      
       
     </section>
   </body>
