@@ -1,82 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700|Nanum+Gothic+Coding:400,700|Roboto&display=swap');
 
 @font-face {
-    font-family: 'Zoombieland';
-    src: url('./fonts/zoombieland.woff2') format('woff2'),
-        url('./fonts/zoombieland.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Cheri';
-    src: url('./fonts/Cheri.woff2') format('woff2'),
-        url('./fonts/Cheri.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Cheri';
-    src: url('./fonts/Cheriliney.woff2') format('woff2'),
-        url('./fonts/Cheriliney.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'bubblegum';
-    src: url('./fonts/bubblegum.woff2') format('woff2'),
-        url('./fonts/bubblegum.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'kbtwolovers';
-    src: url('./fonts/kbtwolovers.woff2') format('woff2'),
-        url('./fonts/kbtwolovers.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'woodcutter VIRUS';
     src: url('./fonts/woodcuttervirus.woff2') format('woff2'),
         url('./fonts/woodcuttervirus.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'THE CREEPY HUNTER';
-    src: url('./fonts/thecreepyhunter.woff2') format('woff2'),
-        url('./fonts/thecreepyhunter.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'friday13';
-    src: url('./fonts/friday13bonusnfi.woff2') format('woff2'),
-        url('./fonts/friday13bonusnfi.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'friday13';
-    src: url('./fonts/friday13sh.woff2') format('woff2'),
-        url('./fonts/friday13sh.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Stranger back in the Night';
-    src: url('./fonts/strangerbackinthenight.woff2') format('woff2'),
-        url('./fonts/strangerbackinthenight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -89,19 +16,10 @@
     font-style: normal;
 }
 
-/* font classes hahaha so lazy */
-.font-bubblegum { font-family: 'bubblegum'; }
-.font-cheri { font-family: 'Cheri'; }
-.font-friday { font-family: 'friday13'; }
 .font-hell { font-family: 'Hellvetica'; }
 .font-ibm { font-family: 'IBM Plex Mono', monospace; }
-.font-kbt { font-family: 'kbtwolovers'; }
 .font-nanum { font-family: 'Nanum Gothic Coding', monospace; }
-.font-roboto { font-family: 'Roboto', sans-serif; }
-.font-stranger { font-family: 'Stranger back in the Night'; }
-.font-creepy { font-family: 'THE CREEPY HUNTER'; }
 .font-wood { font-family: 'woodcutter VIRUS'; }
-.font-zoombie { font-family: 'Zoombieland'; }
 
 /* base type styles */ 
 
@@ -111,26 +29,30 @@ body {
   font-weight: 400;
   line-height: 1.65;
   color: black;
+  position: relative; 
 }
 
 p { margin-bottom: 1.15rem; }
 
 h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1.05rem;
+  margin: 0;
   font-family: 'woodcutter VIRUS';
   font-weight: 400;
   line-height: 1.15;
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 3.052em;
-}
-
+h1 { font-size: 3.052em; }
 h2 { font-size: 2.441em; }
 h3 { font-size: 1.953em; }
 h4 { font-size: 1.563em; }
 h5 { font-size: 1.25em; }
 
+h2 { margin-bottom: 32px; }
+h4 { margin-bottom: 24px; }
+
 small, 
 .text_small { font-size: 0.8em; }
+
+button, p, a {
+  font-family: 'IBM Plex Mono', monospace;
+}
