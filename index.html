@@ -21,13 +21,27 @@
 
   </head>
   <body>
+    <button onclick="openMenu()" class="menu-btn">?</button>
     <div class="movie-counter"></div>
-    <section class="wrapper">
-      <section class="title-block">
-        <h2 class="font-wood">It's Movie Night!</h2>
-      </section>
+    <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
 
-      <section class="movie-block">
+    <div id="menu">
+      <div class="thank-you">
+        <p>If you want to contribute movie titles to this site please do&nbsp;so&nbsp;below.</p>
+      </div>
+      
+      <form name="movie_submissions" method="POST" action="/" data-netlify="true">
+        <textarea name="submissions" placeholder="Separate movie titles with commas pleasseee"></textarea>
+        <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
+      </form>
+    </div>
+
+    <section class="wrapper">
+      <div class="title-block">
+        <h2 class="title">It's Movie Night!</h2>
+      </div>
+
+      <div class="movie-block">
         <div class="movie-genres"></div>
         <div class="movie-recommendation"></div>
         <div class="btn-block">
@@ -36,15 +50,10 @@
           </button>
           <small>literally click the button <br>for a movie</small>
         </div>
-      </section>
-      
-      <form name="movie_submissions" method="POST" action="/" data-netlify="true">
-        <textarea name="submissions" placeholder = "Separate movie titles with commas pleasseee"></textarea>
-        <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
-      </form>
-      <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
+      </div>
       
     </section>
+    
   </body>
   
   <script src="./movies.js"></script>
