@@ -1,6 +1,6 @@
 body { 
   background: black;
-  border: black solid 6px;
+  border: black solid 8px;
   box-sizing: border-box;
   
   margin: 0;
@@ -80,7 +80,8 @@ textarea {
 }
 
 iframe {
-  border: 5px solid black;
+  border: 16px solid black;
+  border-radius: 16px;
   background: black;
 }
 
@@ -125,6 +126,6 @@ textarea {
   max-height: 600px;
   min-height: 120px;
 
-  border-radius: 0px;
+  border-radius: 8px;
   resize: vertical;
 }
