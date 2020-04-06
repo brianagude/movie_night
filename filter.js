@@ -2,11 +2,7 @@ const movieBlock = document.querySelector('.movie-block')
 const movieRecommend = document.querySelector('.movie-recommendation')
 const movieBtn = document.querySelector('.movie-btn')
 const finePrint = document.querySelector('.movie-block small')
-const movieCounter = document.querySelector('.movie-counter')
-const numberOfMovies = movies.length
 
-// show the number of movies currently in database
-movieCounter.innerHTML = `<b>${numberOfMovies}</b> movies total`
 
 // change youtube url to embed url
 function getId(url) {

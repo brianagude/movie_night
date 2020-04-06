@@ -15,3 +15,8 @@ function openMenu() {
   menu.classList.toggle("open");
 }
  
+
+// show the number of movies currently in database
+const movieCounter = document.querySelector('.movie-counter')
+const numberOfMovies = movies.length
+movieCounter.innerHTML = `<p><b>${numberOfMovies}</b> movies total</p>`
