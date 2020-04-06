@@ -26,6 +26,7 @@ body {
   background: none;
   border: none;
   outline: none; 
+  z-index: 10;
 }
 
 .menu-btn:hover {
@@ -41,12 +42,11 @@ body {
 
   width: 100%;
   max-width: 420px; 
-
   padding: 32px; 
 
   transform: translateX(100%);
   transition: transform 1s ease;
-  pointer-events: none;
+  z-index: 5;
 }
 
 .open { transform: none !important; }
