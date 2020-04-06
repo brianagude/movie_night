@@ -90,7 +90,10 @@ small {
   margin: 0;
 }
 
-.wrapper { padding: 48px 16px; }
+.wrapper { 
+  padding: 48px 16px; 
+  margin: 40px auto;
+}
 
 .btn-block {
   display: flex;
