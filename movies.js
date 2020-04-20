@@ -28,6 +28,10 @@ const movies = [
     "trailer": "https://www.youtube.com/watch?v=YqNYrYUiMfg"
   },
   {
+    "title": "A Star is Born",
+    "trailer": "https://www.youtube.com/watch?v=nSbzyEJ8X9E"
+  },
+  {
     "title": "Ad Astra",
     "trailer": "https://www.youtube.com/watch?v=ObYGzlZvONs"
   },
@@ -42,6 +46,10 @@ const movies = [
   {
     "title": "aladdin",
     "trailer": "https://www.youtube.com/watch?v=JcMtWwiyzpU"
+  },
+  {
+    "title": "Alien",
+    "trailer": "https://www.youtube.com/watch?v=LjLamj-b0I8"
   },
   {
     "title": "all the bright places",
