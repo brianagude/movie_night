@@ -1106,5 +1106,9 @@ const movies = [
   {
     "title": "You've Got Mail",
     "trailer": "https://www.youtube.com/watch?v=znESQTt3L80"
+  },
+  {
+    "title": "Love Itself",
+    "trailer": "https://www.youtube.com/watch?v=b5kwtJkUdpA"
   }
 ]
