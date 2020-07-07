@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Black Movie Night!</title>
+
+  <meta property="og:title" content="Black Movie Night!">
+  <meta property="og:description" content="Random Movie Suggestions to Make Your Quarantine less Quarantiny">
+  <meta property="og:image" content="https://quarantinescreens.netlify.com/favicons/meta_image.png">
+  <meta property="og:url" content="https://quarantinescreens.netlify.com/">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://quarantinescreens.netlify.com/favicons/twitter_meta.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./type.css">
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body class="black-excellence">
+  <button onclick="openMenu()" class="menu-btn">?</button>
+  <div class="black-movie-counter"></div>
+  <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
+
+  <div id="menu">
+    <div class="thank-you">
+      <p>If you want to contribute movie titles to this site please do&nbsp;so&nbsp;below.</p>
+    </div>
+
+    <form name="movie_submissions" method="POST" action="/" data-netlify="true">
+      <input type="text" id="movietitle" name="movietitle" placeholder="Movie Title">
+      <input type="text" id="movietrailer" name="movietrailer" placeholder="Movie Trailer (Youtube URL)">
+      <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
+    </form>
+  </div>
+
+  <section class="wrapper">
+    <div class="title-block">
+      <h2 class="title">It's <b>BLACK</b> Movie Night!</h2>
+    </div>
+
+    <div class="movie-block">
+      <div class="movie-genres"></div>
+      <div class="movie-recommendation"></div>
+      <div class="btn-block">
+        <button class="movie-btn btn">
+          giMmE a MOviE!
+        </button>
+        <small>literally click the button <br>for a movie</small>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+<script src="./movies.js"></script>
+<script src="./filter.js"></script>
+<script src="./effects.js"></script>
+
+</html>
