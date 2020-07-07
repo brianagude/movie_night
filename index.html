@@ -20,7 +20,24 @@
     <link rel="stylesheet" href="./styles.css">
 
   </head>
-  <body>
+  <body class="homepage">
+    <div class="lightbox">
+      
+
+      <div class="lightbox-container">
+        <button onclick="closeLightbox()" class="lightbox-btn">x</button>
+        <h4>Educate Yourself on<br>Black Excellence</h4>
+
+        <div class="btn-block">
+          <a href='/black-excellence' class="btn">
+            take me to the king!
+          </a>
+          <!-- <small>clicking this button will filter your movie suggestions</small> -->
+        </div>
+      </div>
+    </div>
+
+
     <button onclick="openMenu()" class="menu-btn">?</button>
     <div class="movie-counter"></div>
     <p class="creds">this site was created by <a href="https://www.brianagude.com/">briana</a></p>
@@ -33,7 +50,6 @@
       <form name="movie_submissions" method="POST" action="/" data-netlify="true">
         <input type="text" id="movietitle" name="movietitle" placeholder="Movie Title">
         <input type="text" id="movietrailer" name="movietrailer" placeholder="Movie Trailer (Youtube URL)">
-        <!-- <textarea name="submissions" placeholder="Separate movie titles with commas pleasseee"></textarea> -->
         <button type="submit" class="form-submit btn">SUbMiT mOViEs</button>
       </form>
     </div>
