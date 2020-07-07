@@ -194,7 +194,7 @@ textarea {
   resize: vertical;
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1800px){
  iframe {
    width: 50vw;
    height: 40vh;
